@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc",
     "watch": "tsc -w",
-    "server": "lite-server --baseDir=app",
+    "server": "lite-server",
     "start": "concurrently \"npm run watch\" \"npm run server\"",
     "build": "tsc --build",
     "clean": "tsc --build --clean"
