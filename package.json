@@ -8,7 +8,9 @@
     "compile": "tsc",
     "watch": "tsc -w",
     "server": "lite-server --baseDir=app",
-    "start": "concurrently \"npm run watch\" \"npm run server\""
+    "start": "concurrently \"npm run watch\" \"npm run server\"",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
   },
   "keywords": [],
   "author": "",

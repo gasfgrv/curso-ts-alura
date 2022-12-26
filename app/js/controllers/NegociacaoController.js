@@ -7,15 +7,16 @@ System.register(["../helpers/decorators/index", "../models/index", "../services/
         return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
     var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+        function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
         return new (P || (P = Promise))(function (resolve, reject) {
             function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
             function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-            function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+            function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
             step((generator = generator.apply(thisArg, _arguments || [])).next());
         });
     };
-    var __moduleName = context_1 && context_1.id;
     var index_1, index_2, index_3, index_4, index_5, NegociacaoController, DiaDaSemana;
+    var __moduleName = context_1 && context_1.id;
     return {
         setters: [
             function (index_1_1) {
